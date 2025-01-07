@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Table Example</title>
+    <style>
+      /* Dark Mode Styling */
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #333;
+      }
+
+      th {
+        background-color: #333;
+        color: #fff;
+      }
+
+      td {
+        background-color: #1e1e1e;
+      }
+
+      tr:nth-child(even) td {
+        background-color: #2c2c2c;
+      }
+
+      tr:hover td {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learning colspan</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Alice</td>
+          <td>25</td>
+          <td>New York</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td colspan="2">30</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Learning rowspan</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Alice</td>
+          <td>25</td>
+          <td>New York</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>30</td>
+          <td rowspan="2">Chicago</td>
+        </tr>
+
+        <tr>
+          <td>Mohan</td>
+          <td>34</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
