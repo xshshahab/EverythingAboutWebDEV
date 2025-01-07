@@ -1,0 +1,1 @@
+alert("Day 01 Understanding of boiler plate code.");
