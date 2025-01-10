@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms and input</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Learning Forms</h1>
+    <form action="post">
+      <div>
+        <label for="username">Username: </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+        />
+      </div>
+      <div>
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="subcribe" id="subcribe" value="yes" />
+        <label for="subcribe">Subscribe to newsletter</label>
+      </div>
+
+      <div>
+        <label for="comments">Enter you comments here: </label>
+        <textarea
+          name="comments"
+          placeholder="Enter you comments here"
+          id="comments"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="fruits">Select Your fruits</label>
+        <select name="fruits" id="fruits">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="orange">Orange</option>
+          <option value="mango">Mango</option>
+          <option value="kiwi">Kiwi</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
