@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entities and Code Tag in HTML</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #242424;
+        margin: 20px;
+        color: white;
+      }
+
+      h1,
+      h2 {
+        color: #cbbebe;
+      }
+
+      .content {
+        background-color: rgb(21, 20, 20);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      pre {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: monospace;
+      }
+
+      code {
+        background-color: #f9f9f9;
+        padding: 2px 5px;
+        font-family: monospace;
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>HTML Entities and Code Tag</h1>
+
+      <h2>1. HTML Entities</h2>
+      <p>
+        HTML entities are used to represent special characters in HTML that
+        would otherwise be interpreted as HTML code. For example:
+      </p>
+
+      <ul>
+        <li><strong>&lt;</strong> for less-than symbol (<)</li>
+        <li><strong>&gt;</strong> for greater-than symbol (>)</li>
+        <li><strong>&amp;</strong> for the ampersand symbol (&)</li>
+        <li><strong>&quot;</strong> for double quotes ("")</li>
+        <li><strong>&#169;</strong> for the copyright symbol (©)</li>
+      </ul>
+
+      <p>Here’s an example of some HTML entities in action:</p>
+      <pre>
+&lt;div&gt;This is a div element&lt;/div&gt;
+      </pre>
+      <p>When rendered, the above code will show:</p>
+      <div>&lt;div&gt;This is a div element&lt;/div&gt;</div>
+
+      <h2>2. The <code>&lt;code&gt;</code> Tag in HTML</h2>
+      <p>
+        The <code>&lt;code&gt;</code> tag is used to define a piece of computer
+        code. It’s typically used to represent programming languages, commands,
+        or other code snippets.
+      </p>
+
+      <p>
+        Here is an example of code being used inside the
+        <code>&lt;code&gt;</code> tag:
+      </p>
+      <pre>
+        <code>let x = 5;
+            let y = 10;
+            let sum = x + y;
+        </code>
+    </pre>
+
+      <p>
+        Notice how the <code>&lt;code&gt;</code> tag helps in distinguishing the
+        code from the rest of the text, maintaining the original formatting and
+        style.
+      </p>
+    </div>
+  </body>
+</html>
