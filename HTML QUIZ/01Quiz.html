@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz 01 HTML FORM</title>
+  </head>
+  <body>
+    <form action="post">
+      <div>
+        <label for="name">Enter your name :</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter you name"
+          required
+          autofocus
+        />
+      </div>
+      <div>
+        <label for="city">Select your name :</label>
+        <select name="city" id="city">
+          <option value="Kathmandu">Kathmandu</option>
+          <option value="patna">Patna</option>
+          <option value="bhaktiyarpur">Bhaktiyarpur</option>
+          <option value="supaul">Supaul</option>
+        </select>
+      </div>
+      <div>
+        <label for="pincode">Enter your pincode :</label>
+        <input
+          required
+          autofocus
+          type="number"
+          name="pincode"
+          placeholder="Enter your pincode"
+        />
+      </div>
+      <div>
+        <input type="submit" value="Submit Form" />
+      </div>
+    </form>
+  </body>
+</html>
