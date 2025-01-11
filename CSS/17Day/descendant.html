@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant Selector Example</title>
+    <style>
+      div p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Descendant Selector Example</h1>
+
+    <div>
+      <p>This paragraph is inside a div and will be red.</p>
+      <span>
+        <p>This nested paragraph is also inside a div, and it will be red.</p>
+      </span>
+    </div>
+
+    <p>
+      This paragraph is not inside a div, so it is not affected by the
+      descendant selector.
+    </p>
+  </body>
+</html>

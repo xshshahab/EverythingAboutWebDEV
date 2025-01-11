@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Sibling Selector Example</title>
+    <style>
+      h1 ~ p {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <p>Sibling paragraph 1.</p>
+    <p>Sibling paragraph 2.</p>
+
+    <p>This paragraph is also styled as a sibling of the h1 element.</p>
+    <div>
+      <p>This paragraph will not be styled because it's inside a div.</p>
+    </div>
+  </body>
+</html>

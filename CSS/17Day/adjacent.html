@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adjacent Sibling Selector Example</title>
+    <style>
+      h1 + p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <p>This paragraph is styled by the adjacent sibling selector.</p>
+
+    <p>
+      This paragraph is not affected because it doesn't immediately follow the
+      h1 element.
+    </p>
+  </body>
+</html>
