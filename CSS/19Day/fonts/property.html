@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Property Example</title>
+    <style>
+      body {
+        font-family: "Verdana", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-family: "Arial", sans-serif;
+        font-style: italic;
+        font-variant: small-caps;
+        font-weight: bold;
+        color: darkblue;
+      }
+
+      p {
+        font-size: 18px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 300;
+        color: darkslategray;
+      }
+
+      span {
+        font-size: 14px;
+        font-style: oblique;
+        font-weight: lighter;
+        color: green;
+      }
+
+      .highlight {
+        font-weight: bold;
+        font-style: italic;
+        color: orange;
+      }
+
+      #letter {
+        letter-spacing: 20px;
+      }
+
+      #content {
+        line-height: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Learning Font Property</h1>
+      <p>This is a paragraph demonstrating font properties in CSS.</p>
+      <p>
+        <span
+          >Here is a smaller text using a
+          <span class="highlight">span element</span> with different font
+          properties.</span
+        >
+      </p>
+    </div>
+
+    <div>
+      <h1>Another Section Title</h1>
+      <p id="letter">
+        Exploring more examples with different text styles and sizes.
+      </p>
+    </div>
+
+    <div>
+      <p id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        nulla exercitationem veniam animi ea, quibusdam, perferendis vero ipsa
+        corporis quidem, quam commodi numquam magni obcaecati accusamus minima
+        tenetur? Beatae excepturi corrupti nemo eligendi maiores?
+      </p>
+    </div>
+  </body>
+</html>
