@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display: none, table, list-item</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .table {
+        display: table;
+        border: 1px solid black;
+        margin: 10px 0;
+      }
+
+      .table-row {
+        display: table-row;
+      }
+
+      .table-cell {
+        display: table-cell;
+        border: 1px solid black;
+        padding: 5px;
+      }
+
+      .list-item {
+        display: list-item;
+        list-style-type: circle;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Display: none, table, list-item</h2>
+
+    <p class="hidden">This paragraph is hidden using display: none.</p>
+
+    <div class="table">
+      <div class="table-row">
+        <div class="table-cell">Cell 1</div>
+        <div class="table-cell">Cell 2</div>
+      </div>
+    </div>
+
+    <ul>
+      <li class="list-item">I am a list item.</li>
+    </ul>
+  </body>
+</html>
