@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables.</title>
+    <style>
+      :root {
+        --bg-color: purple;
+        --color: blue;
+        --secondryColor: skyblue;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: #fff;
+      }
+
+      .first {
+        background-color: var(--color);
+        padding: 10px;
+      }
+      .container {
+        background-color: var(--secondryColor);
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">CSS Variables</h1>
+    <div class="first">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas facere
+      corporis totam alias porro hic dolores, adipisci laudantium quis minus
+      unde accusantium nostrum reiciendis suscipit id voluptas maiores. Cumque
+      adipisci sapiente consequatur repudiandae!
+    </div>
+  </body>
+</html>

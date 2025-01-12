@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        background-color: #111;
+        color: #fff;
+      }
+      /* Root level variables */
+      :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --font-size: 16px;
+        --padding: 10px;
+        --border-radius: 8px;
+      }
+
+      /* Styling the body using variables */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: var(--font-size);
+        margin: 0;
+        padding: var(--padding);
+      }
+
+      h1 {
+        color: var(--primary-color);
+        text-align: center;
+      }
+
+      p {
+        font-size: calc(var(--font-size) * 1.25);
+        line-height: 1.6;
+        color: var(--secondary-color);
+      }
+
+      .button {
+        display: inline-block;
+        padding: var(--padding);
+        background-color: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        border-radius: var(--border-radius);
+        font-size: var(--font-size);
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: var(--secondary-color);
+      }
+
+      /* Local variable for specific component */
+      .alert {
+        --alert-color: #e74c3c;
+        background-color: var(--alert-color);
+        color: white;
+        padding: var(--padding);
+        border-radius: var(--border-radius);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Variables Demo</h1>
+    <p>
+      This is a demonstration of using CSS variables for consistent styling.
+    </p>
+
+    <a href="#" class="button">Click Me</a>
+
+    <div class="alert">
+      <p>This is an alert box using local variables.</p>
+    </div>
+  </body>
+</html>
