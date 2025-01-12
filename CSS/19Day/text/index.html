@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Properties in CSS</title>
+    <style>
+      /* Basic font properties */
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* h1 styles */
+      h1 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        word-spacing: 5px;
+        color: darkblue;
+        text-shadow: 2px 2px 4px lightgray;
+      }
+
+      /* Paragraph styles */
+      p {
+        font-size: 18px;
+        text-align: justify;
+        text-indent: 30px;
+        color: darkslategray;
+      }
+
+      /* Highlighting with spans */
+      span {
+        font-weight: bold;
+        color: crimson;
+        font-style: italic;
+      }
+
+      /* Underline, overline, line-through */
+      .decorative {
+        text-decoration: underline overline dotted;
+        text-align: center;
+      }
+
+      /* Aligning text in different ways */
+      .align-left {
+        text-align: left;
+      }
+
+      .align-right {
+        text-align: right;
+      }
+
+      /* Styling for lists */
+      ul {
+        list-style-type: square;
+      }
+
+      ol {
+        list-style-type: decimal;
+      }
+
+      /* Blockquote style */
+      blockquote {
+        font-size: 16px;
+        font-style: italic;
+        border-left: 5px solid gray;
+        padding-left: 15px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Properties in CSS</h1>
+
+    <p>
+      This is a paragraph demonstrating various text properties in CSS. You can
+      apply styles such as <span>bold, italic, and color</span> using CSS
+      properties.
+    </p>
+
+    <p class="decorative">
+      Text can be decorated using underline, overline, and strikethrough
+      effects.
+    </p>
+
+    <h2>Text Alignment</h2>
+    <p class="align-left">This paragraph is left-aligned.</p>
+    <p class="align-right">This paragraph is right-aligned.</p>
+
+    <h2>Lists Example</h2>
+    <ul>
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+    </ul>
+
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ol>
+
+    <h2>Blockquote Example</h2>
+    <blockquote>
+      "This is a blockquote, often used to highlight important text or quotes."
+    </blockquote>
+  </body>
+</html>
