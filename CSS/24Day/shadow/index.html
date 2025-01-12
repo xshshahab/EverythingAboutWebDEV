@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow Examples</title>
+    <style>
+      /* Simple shadow */
+      .simple-shadow {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        margin: 20px;
+        padding: 20px;
+      }
+
+      /* Inset shadow */
+      .inset-shadow {
+        width: 200px;
+        height: 100px;
+        background-color: lightcoral;
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+        margin: 20px;
+        padding: 20px;
+      }
+
+      /* Multiple shadows */
+      .multiple-shadows {
+        width: 200px;
+        height: 100px;
+        background-color: lightgreen;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+          -5px -5px 10px rgba(0, 0, 0, 0.3);
+        margin: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Box Shadow Examples</h2>
+    <div class="simple-shadow">Simple Shadow</div>
+    <div class="inset-shadow">Inset Shadow</div>
+    <div class="multiple-shadows">Multiple Shadows</div>
+  </body>
+</html>
