@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors in CSS</title>
+    <style>
+      /* Basic color names */
+      h1 {
+        color: red;
+      }
+
+      /* HEX color codes */
+      .hex-color {
+        color: #3498db; /* Light blue */
+      }
+
+      /* RGB color model */
+      .rgb-color {
+        color: rgb(255, 165, 0); /* Orange */
+      }
+
+      /* RGBA color with transparency */
+      .rgba-color {
+        color: rgba(46, 204, 113, 0.7); /* Green with 70% opacity */
+      }
+
+      /* HSL color model */
+      .hsl-color {
+        color: hsl(240, 100%, 50%); /* Pure blue */
+      }
+
+      /* HSLA color model */
+      .hsla-color {
+        color: hsla(300, 75%, 60%, 0.8); /* Purple with transparency */
+      }
+
+      /* Background color example */
+      .background {
+        background-color: #f1c40f; /* Yellow background */
+        padding: 10px;
+        color: black;
+      }
+
+      /* Gradient background */
+      .gradient {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      /* Border colors */
+      .border-color {
+        border: 3px solid #8e44ad;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      /* Color contrast and accessibility */
+      .high-contrast {
+        background-color: black;
+        color: yellow;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Colors Demonstration</h1>
+
+    <p class="hex-color">This text uses a HEX color code for light blue.</p>
+    <p class="rgb-color">This text uses an RGB color code for orange.</p>
+    <p class="rgba-color">This text uses RGBA for green with transparency.</p>
+    <p class="hsl-color">This text uses HSL for pure blue.</p>
+    <p class="hsla-color">This text uses HSLA for purple with transparency.</p>
+
+    <div class="background">
+      This block has a yellow background using background-color property.
+    </div>
+
+    <div class="gradient">This block uses a linear gradient background.</div>
+
+    <div class="border-color">
+      This block has a purple border using a border color property.
+    </div>
+
+    <div class="high-contrast">
+      This block demonstrates high contrast for better accessibility.
+    </div>
+  </body>
+</html>

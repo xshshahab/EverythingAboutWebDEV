@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+/* General container styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+
+/* Box styling */
+.box {
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Color-specific box backgrounds */
+.aliceblue {
+  background-color: aliceblue;
+  color: black;
+}
+.antiquewhite {
+  background-color: antiquewhite;
+  color: black;
+}
+.aqua {
+  background-color: aqua;
+  color: black;
+}
+.aquamarine {
+  background-color: aquamarine;
+  color: black;
+}
+.azure {
+  background-color: azure;
+  color: black;
+}
+.beige {
+  background-color: beige;
+  color: black;
+}
+.bisque {
+  background-color: bisque;
+  color: black;
+}
+.black {
+  background-color: black;
+}
+.blanchedalmond {
+  background-color: blanchedalmond;
+  color: black;
+}
+.blue {
+  background-color: blue;
+}
+.blueviolet {
+  background-color: blueviolet;
+}
+.brown {
+  background-color: brown;
+}
+.burlywood {
+  background-color: burlywood;
+  color: black;
+}
+.cadetblue {
+  background-color: cadetblue;
+}
+.chartreuse {
+  background-color: chartreuse;
+  color: black;
+}
+.chocolate {
+  background-color: chocolate;
+}
+.coral {
+  background-color: coral;
+}
+.cornflowerblue {
+  background-color: cornflowerblue;
+}
+.cornsilk {
+  background-color: cornsilk;
+  color: black;
+}
+.crimson {
+  background-color: crimson;
+}
+.cyan {
+  background-color: cyan;
+  color: black;
+}
+.darkblue {
+  background-color: darkblue;
+}
+.darkcyan {
+  background-color: darkcyan;
+}
+.darkgoldenrod {
+  background-color: darkgoldenrod;
+}
+.darkgray {
+  background-color: darkgray;
+  color: black;
+}
+.darkgreen {
+  background-color: darkgreen;
+}
+.darkkhaki {
+  background-color: darkkhaki;
+  color: black;
+}
+.darkmagenta {
+  background-color: darkmagenta;
+}
+.darkolivegreen {
+  background-color: darkolivegreen;
+}
+.darkorange {
+  background-color: darkorange;
+}
+.darkorchid {
+  background-color: darkorchid;
+}
+.darkred {
+  background-color: darkred;
+}
+.darksalmon {
+  background-color: darksalmon;
+  color: black;
+}
+.darkseagreen {
+  background-color: darkseagreen;
+  color: black;
+}
+.darkslateblue {
+  background-color: darkslateblue;
+}
+.darkslategray {
+  background-color: darkslategray;
+}
+.darkturquoise {
+  background-color: darkturquoise;
+  color: black;
+}
+.darkviolet {
+  background-color: darkviolet;
+}
+.deeppink {
+  background-color: deeppink;
+}

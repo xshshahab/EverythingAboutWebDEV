@@ -3,15 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fonts Color Text in CSS</title>
+    <title>Fonts, Colors, and Text in CSS</title>
+
+    <!-- Google Font: Outfit -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
+      /* Apply Google Font to the entire page */
+      body {
+        font-family: "Outfit", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+
+      /* Styled header with uppercase and color */
       h2 {
         text-transform: uppercase;
         text-align: center;
+        font-size: 32px;
+        color: #3498db;
+        letter-spacing: 3px;
+        margin-top: 20px;
+      }
+
+      /* Paragraph styling */
+      p {
+        font-size: 18px;
+        color: #2c3e50;
+        line-height: 1.8;
+        text-align: justify;
+        margin: 20px;
+      }
+
+      /* Highlight text in a paragraph */
+      .highlight {
+        color: #e74c3c;
+        font-weight: 600;
+      }
+
+      /* Custom styling for sections */
+      .section {
+        padding: 20px;
+        background-color: #ecf0f1;
+        margin: 10px;
+        border-radius: 8px;
+      }
+
+      /* Button styling */
+      .button {
+        display: inline-block;
+        background-color: #2ecc71;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        text-align: center;
+        margin: 10px;
+      }
+
+      /* Link styling */
+      a {
+        color: #2980b9;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: #8e44ad;
+        text-decoration: underline;
       }
     </style>
   </head>
+
   <body>
-    <h2>About this page</h2>
+    <h2>About This Page</h2>
+
+    <div class="section">
+      <p>
+        This page demonstrates how to style text using different font
+        properties, colors, and external fonts from Google Fonts. The selected
+        font is
+        <span class="highlight">Outfit</span>, a clean and modern sans-serif
+        font.
+      </p>
+
+      <p>
+        Fonts and text styles greatly enhance the readability and visual appeal
+        of a webpage. You can combine font weights, colors, letter spacing, and
+        text transformations to create engaging designs.
+      </p>
+
+      <a
+        href="https://fonts.google.com/specimen/Outfit"
+        target="_blank"
+        class="button"
+      >
+        Learn More About Outfit Font
+      </a>
+    </div>
   </body>
 </html>
