@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity & Cascade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container for demonstrating specificity and cascade -->
+    <div class="container">
+      <!-- Inline styles have the highest specificity -->
+      <p style="color: purple">
+        This paragraph has an inline style applied (highest specificity).
+      </p>
+
+      <!-- ID selectors have higher specificity than class or element selectors -->
+      <p id="special-paragraph">
+        This paragraph uses an ID selector (high specificity).
+      </p>
+
+      <!-- Class selectors are more specific than element selectors -->
+      <p class="styled-paragraph">
+        This paragraph uses a class selector (medium specificity).
+      </p>
+
+      <!-- Element selectors have the lowest specificity -->
+      <p>This paragraph uses an element selector (low specificity).</p>
+
+      <!-- Multiple classes and element selectors can be combined to increase specificity -->
+      <p class="styled-paragraph special">
+        This paragraph combines selectors to demonstrate higher specificity.
+      </p>
+    </div>
+  </body>
+</html>

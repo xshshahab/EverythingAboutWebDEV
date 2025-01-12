@@ -1,0 +1,33 @@
+/* 1. Universal selector applies to all elements and has the lowest specificity */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Element selector (lowest specificity among explicit selectors) */
+p {
+  color: gray;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* 3. Class selector (higher specificity than element selectors) */
+.styled-paragraph {
+  color: blue;
+  font-style: italic;
+}
+
+/* 4. ID selector (higher specificity than class selectors) */
+#special-paragraph {
+  color: green;
+  font-weight: bold;
+}
+
+/* 5. Using multiple selectors increases specificity */
+.styled-paragraph.special {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* 6. Inline styles have the highest specificity and override all CSS rules */
