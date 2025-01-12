@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS Overflow Property Examples</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+
+      /* Container for demonstration */
+      .demo-container {
+        width: 350px;
+        height: 150px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+        padding: 10px;
+        overflow: hidden;
+        position: relative;
+        background-color: #f9f9f9;
+      }
+
+      /* Example 1: Overflow visible (default) */
+      .overflow-visible {
+        overflow: visible;
+        border-color: blue;
+        background-color: #e0f7fa;
+      }
+
+      /* Example 2: Overflow hidden */
+      .overflow-hidden {
+        overflow: hidden;
+        background-color: #ffecb3;
+      }
+
+      /* Example 3: Scroll overflow */
+      .overflow-scroll {
+        overflow: scroll;
+        border-color: orange;
+        background-color: #ffe0b2;
+      }
+
+      /* Example 4: Overflow auto */
+      .overflow-auto {
+        overflow: auto;
+        border-color: red;
+        background-color: #ffcdd2;
+      }
+
+      /* Example 5: Horizontal overflow only */
+      .overflow-x-scroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        border-color: purple;
+        background-color: #d1c4e9;
+      }
+
+      /* Example 6: Vertical overflow only */
+      .overflow-y-scroll {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-color: green;
+        background-color: #c8e6c9;
+      }
+
+      /* Long content for scroll effect */
+      .content {
+        width: 500px;
+        height: 200px;
+        background-color: rgba(100, 100, 255, 0.2);
+        padding: 10px;
+      }
+
+      /* Custom Scrollbar Styling */
+      .custom-scroll {
+        overflow: auto;
+        max-height: 150px;
+      }
+
+      .custom-scroll::-webkit-scrollbar {
+        width: 12px;
+        background-color: #f0f0f0;
+      }
+
+      .custom-scroll::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 6px;
+      }
+
+      .custom-scroll::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+      }
+
+      /* Clipping overflow using clip-path */
+      .clip-path-example {
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        overflow: hidden;
+        background-color: lightcoral;
+        padding: 10px;
+        color: white;
+      }
+
+      /* Transform with overflow control */
+      .transform-example {
+        overflow: hidden;
+        position: relative;
+        height: 100px;
+        transform: rotate(5deg);
+        background-color: lightgreen;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Advanced CSS Overflow Property Examples</h1>
+
+    <h3>Overflow: Visible (Default)</h3>
+    <div class="demo-container overflow-visible">
+      <p class="content">
+        The content overflows outside the box because `overflow: visible;`
+        allows it to extend beyond the container's bounds.
+      </p>
+    </div>
+
+    <h3>Overflow: Hidden</h3>
+    <div class="demo-container overflow-hidden">
+      <p class="content">
+        The content is clipped and hidden. It does not scroll, and you cannot
+        see any overflow.
+      </p>
+    </div>
+
+    <h3>Overflow: Scroll</h3>
+    <div class="demo-container overflow-scroll">
+      <p class="content">
+        The container shows scrollbars even when not strictly necessary.
+      </p>
+    </div>
+
+    <h3>Overflow: Auto</h3>
+    <div class="demo-container overflow-auto">
+      <p class="content">
+        Scrollbars appear only when the content overflows the box.
+      </p>
+    </div>
+
+    <h3>Horizontal Overflow Only (`overflow-x: scroll`)</h3>
+    <div class="demo-container overflow-x-scroll">
+      <p class="content">Scroll horizontally to see the hidden content.</p>
+    </div>
+
+    <h3>Vertical Overflow Only (`overflow-y: scroll`)</h3>
+    <div class="demo-container overflow-y-scroll">
+      <p class="content">Scroll vertically to see the hidden content.</p>
+    </div>
+
+    <h3>Custom Scrollbar Styling</h3>
+    <div class="demo-container custom-scroll">
+      <p class="content">
+        This box demonstrates custom scrollbar styling using
+        `::-webkit-scrollbar` properties. Scroll to see the effect.
+      </p>
+    </div>
+
+    <h3>Clipping Overflow Using `clip-path`</h3>
+    <div class="clip-path-example">
+      <p>This content is clipped using a polygonal clip path.</p>
+    </div>
+
+    <h3>Overflow with `transform` Example</h3>
+    <div class="transform-example">
+      <p>Overflow hidden inside a rotated container.</p>
+    </div>
+  </body>
+</html>

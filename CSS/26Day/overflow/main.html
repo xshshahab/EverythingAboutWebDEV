@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Overflow Property</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        margin: 20px;
+      }
+
+      /* Box with overflow visible (default behavior) */
+      .overflow-visible {
+        width: 300px;
+        height: 100px;
+        border: 2px solid blue;
+        overflow: visible;
+        background-color: lightcyan;
+        padding: 10px;
+      }
+
+      /* Box with overflow hidden */
+      .overflow-hidden {
+        width: 300px;
+        height: 100px;
+        border: 2px solid green;
+        overflow: hidden;
+        background-color: lightgreen;
+        padding: 10px;
+      }
+
+      /* Box with scroll overflow */
+      .overflow-scroll {
+        width: 300px;
+        height: 100px;
+        border: 2px solid orange;
+        overflow: scroll;
+        background-color: lightyellow;
+        padding: 10px;
+      }
+
+      /* Box with auto overflow */
+      .overflow-auto {
+        width: 300px;
+        height: 100px;
+        border: 2px solid red;
+        overflow: auto;
+        background-color: lightpink;
+        padding: 10px;
+      }
+
+      /* Content text to demonstrate overflow behavior */
+      .content {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Overflow Property Examples</h2>
+
+    <h3>Overflow: Visible (Default)</h3>
+    <div class="overflow-visible">
+      <p class="content">
+        This is a demonstration of the `overflow: visible` property. The content
+        can overflow outside the box boundaries.
+      </p>
+    </div>
+
+    <h3>Overflow: Hidden</h3>
+    <div class="overflow-hidden">
+      <p class="content">
+        This is a demonstration of the `overflow: hidden` property. The
+        overflowing content is clipped and hidden.
+      </p>
+    </div>
+
+    <h3>Overflow: Scroll</h3>
+    <div class="overflow-scroll">
+      <p class="content">
+        This is a demonstration of the `overflow: scroll` property. A scrollbar
+        appears even if all the content is visible within the box. Scroll to see
+        hidden content.
+      </p>
+    </div>
+
+    <h3>Overflow: Auto</h3>
+    <div class="overflow-auto">
+      <p class="content">
+        This is a demonstration of the `overflow: auto` property. A scrollbar
+        appears only when the content exceeds the box size.
+      </p>
+    </div>
+  </body>
+</html>
