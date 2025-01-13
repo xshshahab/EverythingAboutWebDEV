@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS Selectors</title>
+    <style>
+      .box:first-child {
+        background-color: powderblue;
+        color: black;
+      }
+
+      .box::first-line {
+        color: chartreuse;
+      }
+
+      .boxes * {
+        color: blueviolet;
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">Hey I am first box</div>
+      <div class="box">I am second box</div>
+      <div class="box">I am another box</div>
+    </div>
+  </body>
+</html>
