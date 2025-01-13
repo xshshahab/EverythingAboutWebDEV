@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Float & Clear</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Container Styling */
+      .container {
+        width: 80%;
+        margin: auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        overflow: hidden;
+      }
+
+      /* Float Elements */
+      .left-box {
+        float: left;
+        width: 45%;
+        background-color: #ff6f61;
+        color: white;
+        padding: 20px;
+        margin-right: 5%;
+      }
+
+      .right-box {
+        float: left;
+        width: 45%;
+        background-color: #88b04b;
+        color: white;
+        padding: 20px;
+      }
+
+      /* Clearfix for clearing float */
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Section after float */
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <div class="left-box">
+        <h2>Left Box</h2>
+        <p>This box floats to the left using `float: left`.</p>
+      </div>
+
+      <div class="right-box">
+        <h2>Right Box</h2>
+        <p>
+          This box floats to the left as well, positioned next to the left box.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer Section after clearing floats -->
+    <div class="footer">
+      <p>Footer Section - Floats Cleared</p>
+    </div>
+  </body>
+</html>

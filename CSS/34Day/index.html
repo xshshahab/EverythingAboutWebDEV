@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Float & Clear.</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        background-color: #111;
+        color: #fff;
+      }
+
+      .cards {
+        border: 2px solid black;
+        display: flow-root;
+      }
+
+      .card {
+        border: 2px solid gold;
+      }
+
+      .card2 {
+        background-color: rgb(11, 59, 59);
+        clear: left;
+      }
+
+      img {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <img
+        width="231"
+        src="https://images.pexels.com/photos/4458003/pexels-photo-4458003.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+      <div class="card card1">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum quisquam
+          alias quod soluta, consectetur quia voluptates autem minima et
+          obcaecati esse eligendi assumenda nihil? Deleniti ipsum temporibus at
+          quo adipisci enim iusto ut repellat?
+        </p>
+      </div>
+      <div class="card card2">
+        Card 2 kirem Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Atque repellendus adipisci omnis itaque, ratione ut necessitatibus,
+        pariatur molestiae delectus aut soluta eligendi quas sed recusandae nisi
+        labore blanditiis doloremque perspiciatis animi expedita?
+      </div>
+      <div class="card card3">Card 3</div>
+    </div>
+  </body>
+</html>
