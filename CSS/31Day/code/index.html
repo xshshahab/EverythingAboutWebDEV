@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query Examples</title>
+    <style>
+      /* Example 1: Change background color for devices with a max width of 600px */
+      @media (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+
+      /* Example 2: Change font size for screens wider than 800px */
+      @media (min-width: 800px) {
+        body {
+          font-size: 20px;
+        }
+      }
+
+      /* Example 3: Apply styles for screens between 600px and 900px */
+      @media (min-width: 600px) and (max-width: 900px) {
+        body {
+          background-color: lightgreen;
+          font-family: Arial, sans-serif;
+        }
+      }
+
+      /* Example 4: Apply styles for portrait orientation */
+      @media (orientation: portrait) {
+        body {
+          color: darkblue;
+        }
+      }
+
+      /* Example 5: Hide an element on screens with a maximum height of 500px */
+      @media (max-height: 500px) {
+        .hide-on-small-height {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Query Examples</h1>
+    <p>Resize the browser window to see media queries in action.</p>
+    <div class="hide-on-small-height">
+      This text will be hidden on screens with a height of 500px or less.
+    </div>
+  </body>
+</html>

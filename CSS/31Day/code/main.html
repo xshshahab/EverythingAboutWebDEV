@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query with Boxes</title>
+    <style>
+      /* General box styling */
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: inline-block;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+      }
+
+      /* Box colors */
+      .box1 {
+        background-color: red;
+      }
+      .box2 {
+        background-color: green;
+      }
+      .box3 {
+        background-color: blue;
+      }
+
+      /* Example 1: Change box layout to column for screens smaller than 600px */
+      @media (max-width: 600px) {
+        .box {
+          display: block;
+          margin: 10px auto;
+        }
+      }
+
+      /* Example 2: Change box size for screens wider than 800px */
+      @media (min-width: 800px) {
+        .box {
+          width: 150px;
+          height: 150px;
+          line-height: 150px;
+        }
+      }
+
+      /* Example 3: Hide the third box on screens between 600px and 900px */
+      @media (min-width: 600px) and (max-width: 900px) {
+        .box3 {
+          display: none;
+        }
+      }
+
+      /* Example 4: Apply rounded corners on portrait orientation */
+      @media (orientation: portrait) {
+        .box {
+          border-radius: 20px;
+        }
+      }
+
+      /* Example 5: Change box colors for screens with a height of 500px or less */
+      @media (max-height: 500px) {
+        .box1 {
+          background-color: purple;
+        }
+        .box2 {
+          background-color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+  </body>
+</html>

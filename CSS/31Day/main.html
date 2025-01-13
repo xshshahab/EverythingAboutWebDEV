@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Boxes Example</title>
+    <style>
+      /* Basic Box Container Styling */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      /* Box Styling */
+      .box {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        background-color: lightcoral;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        line-height: 150px;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      /* Example 1: Full-width boxes on smaller screens */
+      @media (max-width: 600px) {
+        .box {
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+
+      /* Example 2: Change box color for medium screens (600px to 900px) */
+      @media (min-width: 600px) and (max-width: 900px) {
+        .box {
+          background-color: teal;
+        }
+      }
+
+      /* Example 3: Increase box size for large screens (900px and above) */
+      @media (min-width: 900px) {
+        .box {
+          width: 200px;
+          height: 200px;
+          line-height: 200px;
+        }
+      }
+
+      /* Example 4: Rotate box text on landscape orientation */
+      @media (orientation: landscape) {
+        .box {
+          transform: rotate(-5deg);
+        }
+      }
+
+      /* Example 5: Add shadow effect on high-resolution displays */
+      @media (min-resolution: 2dppx) {
+        .box {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Responsive Boxes with Media Queries</h1>
+    <div class="container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 4</div>
+    </div>
+  </body>
+</html>
