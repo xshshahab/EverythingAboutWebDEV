@@ -1,0 +1,112 @@
+/* Define CSS Variables for Default Theme */
+:root {
+  --primary-color: #ff6f61;
+  --secondary-color: #6b5b95;
+  --accent-color: #88b04b;
+  --text-color: #ffffff;
+  --bg-color: #333;
+  --navbar-color: #d65076;
+}
+
+/* Responsive Colors for Mobile Devices */
+@media (max-width: 768px) {
+  :root {
+    --primary-color: #ff9a8b;
+    --secondary-color: #85c1e9;
+    --accent-color: #f7dc6f;
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --navbar-color: #f1948a;
+  }
+}
+
+/* Reset and General Styling */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: var(--text-color);
+  text-align: center;
+}
+
+body {
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: var(--navbar-color);
+  padding: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar ul li a {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: var(--accent-color);
+}
+
+/* Section Styling */
+.section {
+  padding: 4rem 2rem;
+  transition: background-color 0.5s ease;
+}
+
+.section-home {
+  background-color: var(--primary-color);
+}
+
+.section-about {
+  background-color: var(--secondary-color);
+}
+
+.section-services {
+  background-color: var(--accent-color);
+}
+
+.section-contact {
+  background-color: var(--navbar-color);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+/* Mobile Layout Adjustments */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+}
