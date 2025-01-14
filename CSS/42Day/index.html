@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transforms Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        margin: 20px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+
+      /* Scale Transform */
+      .scale {
+        transform: scale(1.5);
+      }
+
+      /* Rotate Transform */
+      .rotate {
+        transform: rotate(45deg);
+      }
+
+      /* Translate Transform */
+      .translate {
+        transform: translate(30px, 30px);
+      }
+
+      /* Skew Transform */
+      .skew {
+        transform: skew(20deg, 10deg);
+      }
+
+      /* Multiple Transforms */
+      .multi-transform {
+        transform: rotate(30deg) scale(1.2) translate(10px, -10px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Transforms Example</h1>
+    <div class="container">
+      <div class="box scale">Scale</div>
+      <div class="box rotate">Rotate</div>
+      <div class="box translate">Translate</div>
+      <div class="box skew">Skew</div>
+      <div class="box multi-transform">Multi</div>
+    </div>
+  </body>
+</html>
