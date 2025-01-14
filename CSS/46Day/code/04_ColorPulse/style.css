@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+
+.pulse-box {
+  padding: 20px 40px;
+  background-color: #3498db;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #2980b9;
+  }
+  100% {
+    background-color: #3498db;
+  }
+}
