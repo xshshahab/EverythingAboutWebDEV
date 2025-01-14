@@ -1,0 +1,8 @@
+.shadow-text {
+  font-size: 24px;
+  transition: text-shadow 0.3s ease;
+}
+
+.shadow-text:hover {
+  text-shadow: 2px 2px 5px gray;
+}

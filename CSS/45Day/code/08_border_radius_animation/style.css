@@ -1,0 +1,10 @@
+.circle-box {
+  width: 100px;
+  height: 100px;
+  background-color: #1abc9c;
+  transition: border-radius 0.5s;
+}
+
+.circle-box:hover {
+  border-radius: 50%;
+}

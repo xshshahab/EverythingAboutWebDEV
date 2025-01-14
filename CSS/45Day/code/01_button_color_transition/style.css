@@ -1,0 +1,12 @@
+button.color-transition {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.color-transition:hover {
+  background-color: #2ecc71;
+}

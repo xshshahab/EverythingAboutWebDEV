@@ -1,0 +1,10 @@
+.gradient-box {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to right, red, yellow);
+  transition: background 0.5s ease-in-out;
+}
+
+.gradient-box:hover {
+  background: linear-gradient(to right, blue, green);
+}

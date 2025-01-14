@@ -1,0 +1,12 @@
+.slide-box {
+  width: 200px;
+  height: 50px;
+  background-color: teal;
+  position: relative;
+  left: 0;
+  transition: left 0.3s;
+}
+
+.slide-box:hover {
+  left: 100px;
+}

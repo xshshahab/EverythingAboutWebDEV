@@ -1,0 +1,11 @@
+.text-transition {
+  color: black;
+  background-color: lightgray;
+  padding: 10px;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.text-transition:hover {
+  color: white;
+  background-color: darkgray;
+}
