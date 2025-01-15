@@ -7,5 +7,40 @@
     <title>Netflix UI Clone</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo">
+          <img width="70" src="./assets/images/logo.svg" alt="" />
+        </div>
+        <div class="right">
+          <div id="nav-language">
+            <img width="25" src="./assets/images/translate.png" alt="" />
+            <select name="language" id="english">
+              <option value="english">English</option>
+              <option value="hindi">Hindi</option>
+            </select>
+          </div>
+          <button class="btn">Sign In</button>
+        </div>
+      </nav>
+      <div class="box"></div>
+      <div id="content">
+        <h1>
+          Unlimited movies,<br />
+          TV shows and more
+        </h1>
+        <p>Starts at ₹149. Cancel at any time.</p>
+        <span
+          >Ready to watch? Enter your email to create or restart your
+          membership.</span
+        >
+        <div class="main-submit">
+          <input type="email" required placeholder="Email Address" />
+          <button>Get Started ></button>
+        </div>
+      </div>
+      <div id="line-seperation"></div>
+    </div>
+  </body>
 </html>
