@@ -3,14 +3,19 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Outfit", serif;
+  box-sizing: border-box;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
 }
 
 .main {
@@ -99,7 +104,7 @@ nav {
 }
 
 #content {
-  height: 84%;
+  height: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,8 +159,89 @@ nav {
 }
 
 #line-seperation {
-  height: 9px;
-  background-color: gray;
+  height: 10px;
+  background-color: #252424;
+}
+
+.first-section {
+  width: 100%;
+  display: flex;
+  height: 60vh;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.second-section {
+  width: 100%;
+  display: flex;
+  height: 60vh;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.second-sec-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+.second-sec-left img {
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.second-sec-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: black;
+  width: 50%;
+}
+
+.second-sec-right h1 {
+  font-size: 49px;
+}
+
+.second-sec-right p {
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 60px;
+}
+
+.first-sec-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+.first-sec-left h1 {
+  font-size: 49px;
+}
+
+.first-sec-left p {
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 60px;
+}
+
+.first-sec-right {
+  position: relative;
+  width: 50%;
+}
+
+.first-sec-right video {
+  position: absolute;
+  left: 120px;
+  top: 55px;
+  width: 55%;
 }
 
 @media (max-width: 480px) {
@@ -225,5 +311,95 @@ nav {
 
   .main-submit button {
     padding: 12px 45px;
+  }
+
+  #line-seperation {
+    height: 9px;
+    position: relative;
+    top: -10px;
+    background-color: gray;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    gap: 10px;
+  }
+
+  .first-sec-left {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .first-sec-left h1 {
+    font-size: 35px;
+  }
+
+  .first-sec-left p {
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 30px;
+  }
+
+  .first-sec-right {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .first-sec-right img {
+    width: 90%;
+  }
+
+  .first-sec-right video {
+    position: absolute;
+    left: 90px;
+    top: 35px;
+    width: 55%;
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+  }
+
+  .second-sec-left {
+    display: flex;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .second-sec-left img {
+    width: 600px;
+    object-fit: cover;
+  }
+
+  .second-sec-right {
+    width: 100%;
+  }
+
+  .second-sec-right h1 {
+    font-size: 35px;
+  }
+
+  .second-sec-right p {
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 30px;
+  }
+
+  .second-sec-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+    width: 100%;
   }
 }
