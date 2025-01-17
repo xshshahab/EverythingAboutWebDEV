@@ -10,6 +10,8 @@ Use combining list of adjectives and shop name and another word:
 - Amazing
 - Fire
 
+---
+
 ### Shop name:
 
 - Spot
@@ -17,6 +19,8 @@ Use combining list of adjectives and shop name and another word:
 - Zone
 - Studio
 - Lab
+
+---
 
 ### Another word:
 
