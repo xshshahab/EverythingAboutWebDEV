@@ -1,6 +1,6 @@
 let a = prompt("Enter first number :");
-let b = prompt("Enter second number :");
 let c = prompt("Enter operations :");
+let b = prompt("Enter second number :");
 
 let random = Math.random();
 
