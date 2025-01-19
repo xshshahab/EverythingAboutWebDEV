@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+.container {
+  min-height: 50vh;
+  margin: 20px 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .box {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: orangered;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 10px;
+}
