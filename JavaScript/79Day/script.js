@@ -12,4 +12,6 @@ try {
   console.log("The sum is : ", sum * x);
 } catch (error) {
   console.log("ERROR!!", error);
+} finally {
+  console.log("This will always be executed.");
 }
