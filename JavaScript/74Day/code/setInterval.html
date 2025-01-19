@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Changer - setInterval</title>
+    <style>
+      #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #ffffff;
+      }
+      #child {
+        font-size: 20px;
+        padding: 20px;
+        border: 1px solid #000;
+        text-align: center;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="childcontainer">
+        <div id="child">Hey, Background Change: #ffffff</div>
+        <button id="stopButton">Stop</button>
+      </div>
+    </div>
+    <script>
+      let intervalId;
+
+      function startBackgroundChange() {
+        intervalId = setInterval(() => {
+          const randomColor = `#${Math.floor(Math.random() * 16777215)
+            .toString(16)
+            .padStart(6, "0")}`;
+          document.getElementById("container").style.backgroundColor =
+            randomColor;
+          document.getElementById(
+            "child"
+          ).textContent = `Hey, Background Change: ${randomColor}`;
+        }, 3000); // Run every 3 seconds
+      }
+
+      document.getElementById("stopButton").addEventListener("click", () => {
+        clearInterval(intervalId); // Stop the interval
+      });
+
+      startBackgroundChange(); // Start the interval
+    </script>
+  </body>
+</html>

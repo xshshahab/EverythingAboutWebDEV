@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Changer - setTimeout</title>
+    <style>
+      #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #ffffff;
+      }
+      #child {
+        font-size: 20px;
+        padding: 20px;
+        border: 1px solid #000;
+        text-align: center;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="childcontainer">
+        <div id="child">Hey, Background Change: #ffffff</div>
+        <button id="stopButton">Stop</button>
+      </div>
+    </div>
+    <script>
+      let isRunning = true;
+
+      function changeBackground() {
+        if (!isRunning) return;
+
+        const randomColor = `#${Math.floor(Math.random() * 16777215)
+          .toString(16)
+          .padStart(6, "0")}`;
+        document.getElementById("container").style.backgroundColor =
+          randomColor;
+        document.getElementById(
+          "child"
+        ).textContent = `Hey, Background Change: ${randomColor}`;
+
+        setTimeout(changeBackground, 3000); // Re-run after 3 seconds
+      }
+
+      document.getElementById("stopButton").addEventListener("click", () => {
+        isRunning = false; // Stop the loop
+      });
+
+      changeBackground(); // Start the loop
+    </script>
+  </body>
+</html>
