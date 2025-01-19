@@ -77,3 +77,88 @@ fetchData((data) => {
 ```
 
 This approach is concise and often used in modern JavaScript development.
+
+---
+
+# What is a Promise in JavaScript?
+
+A Promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises help manage asynchronous tasks by providing a cleaner, more manageable approach compared to callbacks.
+
+---
+
+## States of a Promise
+
+A promise has three states:
+
+- `Pending:` The initial state, neither fulfilled nor rejected.
+- `Fulfilled:` The operation was completed successfully.
+- `Rejected:` The operation failed.
+
+### Syntax of a Promise:
+
+```javascript
+const promise = new Promise((resolve, reject) => {
+    // Asynchronous operation
+    if (/* success condition */) {
+        resolve(value); // Call on success
+    } else {
+        reject(error); // Call on failure
+    }
+});
+```
+
+### Example Code with Explanation
+
+```javascript
+// Simulate an asynchronous task using a Promise
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    console.log("Fetching data...");
+
+    // Simulate a delay
+    setTimeout(() => {
+      const success = true; // Simulate success or failure
+      if (success) {
+        resolve({ id: 1, name: "John Doe" }); // Success
+      } else {
+        reject("Failed to fetch data"); // Failure
+      }
+    }, 2000); // 2-second delay
+  });
+}
+
+// Use the Promise
+fetchData()
+  .then((data) => {
+    console.log("Data fetched successfully:", data);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  })
+  .finally(() => {
+    console.log("Operation complete.");
+  });
+```
+
+---
+
+### Explanation
+
+1. **Creating a Promise**:
+
+   - The `fetchData` function returns a `Promise`.
+   - Inside the promise:
+     - `resolve` is called for success.
+     - `reject` is called for failure.
+
+2. **Using `.then()`**:
+
+   - The `then` method is called when the promise is resolved.
+   - It receives the resolved value as an argument.
+
+3. **Using `.catch()`**:
+
+   - The `catch` method handles any errors (rejected promises).
+
+4. **Using `.finally()`**:
+   - The `finally` method executes regardless of the promise's outcome.
