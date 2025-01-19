@@ -18,7 +18,16 @@ class Animal {
 }
 
 class Lion extends Animal {
-  constructor() {}
+  constructor(name) {
+    super(name);
+
+    console.log("Object is created, and he is a lion ");
+  }
+
+  eats() {
+    super.eats();
+    console.log("Hey, Now I'm still eating...");
+  }
 }
 
 let animal = new Animal("Bunny");
