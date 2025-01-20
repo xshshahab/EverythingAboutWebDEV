@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="utils.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div id="left-container" class="left flex flex-col gap-1 bg-black">
+          <div
+            id="top-container"
+            class="top flex flex-col gap-2 rounded bg-gray"
+          >
+            <div class="logo">
+              <img class="invert" src="./img/logo.svg" alt="spotify logo" />
+            </div>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <img class="invert" src="./img/home.svg" alt="home" />Home
+              </li>
+              <li>
+                <img class="invert" src="./img/search.svg" alt="search" />Search
+              </li>
+            </ul>
+          </div>
+          <div
+            id="bottom-container"
+            class="bottom flex flex-col gap2 rounded bg-gray"
+          >
+            <div id="lib-container" class="library justify-between p-1 flex">
+              <div class="flex p-1 gap-1 items-center">
+                <img
+                  width="20"
+                  class="invert"
+                  src="./img/playlist.svg"
+                  alt="library"
+                />
+                <h2 class="font-lib">Your Library</h2>
+              </div>
+              <img class="p-1" width="25" src="./img/plus.svg" alt="plus" />
+            </div>
+            <main id="center-container"></main>
+            <footer id="footer-container" class="p-2">
+              <div id="first-foot" class="mb-2">
+                <span class="text-sm mr-1">Legal</span>
+                <span class="text-sm mr-1">Privacy Center</span>
+                <span class="text-sm mr-1">Privacy Policy</span>
+                <span class="text-sm mr-1">Ads</span>
+              </div>
+              <div id="bottom-foot" class="mt-2 flex flex-col gap-1">
+                <span class="text-sm">Cookies</span>
+                <span class="text-sm">Accessibility</span>
+              </div>
+            </footer>
+          </div>
+        </div>
+        <div id="right-container" class="right border">right</div>
+      </div>
+    </div>
+  </body>
+</html>
