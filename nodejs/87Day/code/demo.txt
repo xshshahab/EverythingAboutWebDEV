@@ -1,0 +1,2 @@
+Syphar is a good boy
+Now, Syphar is learning Node.js
