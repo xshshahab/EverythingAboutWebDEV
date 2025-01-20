@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Express - Testing Post Request</title>
+    <style>
+      body {
+        background-color: #111;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Testing Post Request</h1>
+    </div>
+    <script>
+      async function testPostReq() {
+        let a = await fetch("/", { method: "POST" });
+        let b = await a.text();
+
+        console.log(b);
+      }
+      testPostReq();
+
+      async function testPutReq() {
+        let a = await fetch("/myput", { method: "PUT" });
+        let b = await a.text();
+
+        console.log(b);
+      }
+      testPutReq();
+
+      async function testDelReq() {
+        let a = await fetch("/mydel", { method: "DELETE" });
+        let b = await a.text();
+
+        console.log(b);
+      }
+      testDelReq();
+    </script>
+  </body>
+</html>

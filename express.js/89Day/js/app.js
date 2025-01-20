@@ -1,0 +1,30 @@
+const express = require("express");
+const PORT = process.env.PORT || 3000;
+
+const app = express();
+
+app.use(express.static("public"));
+
+app.get("/", (req, res) => {
+  console.log("Hey, It's a get request");
+  res.send("Hello, World!");
+});
+
+app.post("/", (req, res) => {
+  console.log("Hey, It's a post request");
+  res.send("Hello, World! [ POST REQUEST ]");
+});
+
+app.put("/myput", (req, res) => {
+  console.log("Hey, It's a post request");
+  res.send("Hello, World! [ PUT REQUEST ]");
+});
+
+app.delete("/mydel", (req, res) => {
+  console.log("Hey, It's a post request");
+  res.send("Hello, World! [ DELETE REQUEST ]");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
