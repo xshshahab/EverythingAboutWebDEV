@@ -7,6 +7,10 @@ li {
   list-style: none;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .rounded {
   border-radius: 6px;
 }
@@ -149,24 +153,6 @@ li {
   right: 14px;
 }
 
-.btn {
-  width: 82px;
-  height: 38px;
-  border-radius: 50px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  scale: 1;
-  transition: all 0.3s ease-in;
-}
-
-/* Hover utils */
-
 .ud-hv:hover {
   text-decoration: underline;
-}
-
-.btn:hover {
-  scale: 1.1;
 }

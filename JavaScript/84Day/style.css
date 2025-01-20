@@ -47,8 +47,27 @@ body {
   width: 75vw;
 }
 
+.btn {
+  width: 80px;
+  height: 35px;
+  border-radius: 70px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  scale: 1;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  font-weight: 600;
+  scale: 1.1;
+}
+
 #right-body {
-  min-height: 86vh;
+  max-height: 86vh;
+  overflow-y: scroll;
 }
 
 #center-container {
@@ -60,8 +79,13 @@ body {
   gap: 15px;
   width: 20px;
 }
+
+#card-containers {
+  height: 65vh;
+}
+
 #card-containers .card {
-  width: 200px;
+  width: 185px;
   padding: 10px;
   border-radius: 5px;
   background-color: #252525;
@@ -76,6 +100,7 @@ body {
   width: 100%;
   object-fit: contain;
 }
+
 #play-btn {
   opacity: 0;
   transform: scale(0.8);
@@ -85,4 +110,12 @@ body {
 .card:hover #play-btn {
   opacity: 1;
   transform: scale(1);
+}
+
+.songList ul {
+  padding: 0 22px;
+}
+
+.songList ul li {
+  list-style-type: decimal;
 }
