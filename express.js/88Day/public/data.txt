@@ -1,0 +1,16 @@
+Important Data 
+
+    - Sphar is a full stack web developer.
+
+Tech Stack used
+
+- Frontend
+   - html
+   - css
+   - javascript
+   - reactjs
+- Backend
+   - nodejs
+   - expressjs
+   - mongodb
+   - typescript
