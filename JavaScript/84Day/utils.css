@@ -7,10 +7,6 @@ li {
   list-style: none;
 }
 
-.border {
-  border: 2px solid #f92f19;
-}
-
 .rounded {
   border-radius: 6px;
 }
@@ -19,12 +15,20 @@ li {
   border-radius: 10px;
 }
 
+.rounded-full {
+  border-radius: 50%;
+}
+
 .flex {
   display: flex;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .gap {
@@ -55,12 +59,39 @@ li {
   filter: invert(1);
 }
 
+.text-white {
+  color: #fff;
+}
+
+.bg-transparent {
+  background: none;
+}
+.bg-green {
+  background-color: #1fdf64;
+}
+
 .bg-black {
   background-color: #000;
 }
 
 .bg-gray {
   background-color: #121212;
+}
+
+.bg-grey {
+  background-color: #211f1f;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-base {
+  font-size: 22px;
+}
+
+.font-semibold {
+  font-weight: 700;
 }
 
 .text-sm {
@@ -86,10 +117,56 @@ li {
   margin-top: 8px;
 }
 
+.pd {
+  padding: 4px 6px;
+}
+
+.p-1f {
+  padding: 8px;
+}
+
 .p-1 {
-  margin: 5px;
+  padding: 5px;
 }
 
 .p-2 {
-  margin: 10px;
+  padding: 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bottom-min {
+  bottom: 95px;
+}
+
+.right-min {
+  right: 14px;
+}
+
+.btn {
+  width: 82px;
+  height: 38px;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  scale: 1;
+  transition: all 0.3s ease-in;
+}
+
+/* Hover utils */
+
+.ud-hv:hover {
+  text-decoration: underline;
+}
+
+.btn:hover {
+  scale: 1.1;
 }

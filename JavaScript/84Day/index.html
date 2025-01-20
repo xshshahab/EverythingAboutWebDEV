@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="utils.css" />
     <link rel="stylesheet" href="style.css" />
+    <title>Spotify</title>
   </head>
   <body>
     <div class="wrapper">
@@ -18,7 +19,7 @@
             <div class="logo">
               <img class="invert" src="./img/logo.svg" alt="spotify logo" />
             </div>
-            <ul class="flex flex-col gap-2">
+            <ul class="flex mt-2 flex-col gap-2">
               <li>
                 <img class="invert" src="./img/home.svg" alt="home" />Home
               </li>
@@ -41,25 +42,108 @@
                 />
                 <h2 class="font-lib">Your Library</h2>
               </div>
-              <img class="p-1" width="25" src="./img/plus.svg" alt="plus" />
+              <img width="25" src="./img/plus.svg" alt="plus" />
             </div>
             <main id="center-container"></main>
             <footer id="footer-container" class="p-2">
               <div id="first-foot" class="mb-2">
-                <span class="text-sm mr-1">Legal</span>
-                <span class="text-sm mr-1">Privacy Center</span>
-                <span class="text-sm mr-1">Privacy Policy</span>
-                <span class="text-sm mr-1">Ads</span>
+                <span class="text-sm ud-hv mr-1">Legal</span>
+                <span class="text-sm ud-hv mr-1">Privacy Center</span>
+                <span class="text-sm ud-hv mr-1">Privacy Policy</span>
+                <span class="text-sm ud-hv mr-1">About Ads</span>
               </div>
               <div id="bottom-foot" class="mt-2 flex flex-col gap-1">
-                <span class="text-sm">Cookies</span>
-                <span class="text-sm">Accessibility</span>
+                <span class="ud-hv text-sm">Cookies</span>
+                <span class="ud-hv text-sm">Accessibility</span>
               </div>
             </footer>
           </div>
         </div>
-        <div id="right-container" class="right border">right</div>
+        <div id="right-container" class="right flex flex-col gap-1">
+          <div
+            id="right-header"
+            class="head flex items-center justify-between gap-2 rounded bg-gray"
+          >
+            <div id="nav-left" class="flex gap-1 items-center">
+              <img
+                class="bg-grey p-1 rounded-full"
+                width="25"
+                src="./img/left.svg"
+                alt="left btn"
+              />
+
+              <img
+                class="bg-grey p-1 rounded-full"
+                width="25"
+                src="./img/right.svg"
+                alt="right btn"
+              />
+            </div>
+            <div id="nav-right" class="flex gap-1">
+              <button class="btn text-white bg-transparent">Signup</button>
+              <button class="btn">Login</button>
+            </div>
+          </div>
+          <div id="right-body" class="body bg-gray rounded">
+            <div
+              id="spotify-playlist"
+              class="flex justify-between items-center p-2"
+            >
+              <h1 class="font-medium text-base">Spotify Playlists</h1>
+              <span class="text-sm font-semibold">Show all</span>
+            </div>
+            <div id="card-containers" class="flex gap-2 p-2 flex-wrap">
+              <div id="card-1" class="card relative">
+                <div
+                  id="play-btn"
+                  style="width: 35px; height: 35px"
+                  class="bg-green bottom-min right-min absolute flex items-center justify-center p-1f rounded-full"
+                >
+                  <img src="./img/playbt.svg" alt="play btn" />
+                </div>
+
+                <img src="./assets/happyhits.jpg" alt="happy girl" />
+                <h2 class="mb-2">Happy Hits!</h2>
+                <p class="text-sm">
+                  Hits to boost your mood and fill you with happinees!
+                </p>
+              </div>
+              <div id="card-2" class="card relative">
+                <div
+                  id="play-btn"
+                  style="width: 35px; height: 35px"
+                  class="bg-green bottom-min right-min absolute flex items-center justify-center p-1f rounded-full"
+                >
+                  <img src="./img/playbt.svg" alt="play btn" />
+                </div>
+
+                <img src="./assets/happyhits.jpg" alt="happy girl" />
+                <h2 class="mb-2">Happy Hits!</h2>
+                <p class="text-sm">
+                  Hits to boost your mood and fill you with happinees!
+                </p>
+              </div>
+              <div id="card-3" class="card relative">
+                <div
+                  id="play-btn"
+                  style="width: 35px; height: 35px"
+                  class="bg-green bottom-min right-min absolute flex items-center justify-center p-1f rounded-full"
+                >
+                  <img src="./img/playbt.svg" alt="play btn" />
+                </div>
+
+                <img src="./assets/happyhits.jpg" alt="happy girl" />
+                <h2 class="mb-2">Happy Hits!</h2>
+                <p class="text-sm">
+                  Hits to boost your mood and fill you with happinees!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
