@@ -4,18 +4,17 @@ This is a minimal Express.js setup with just the basic routing and the server li
 
 ```javascript
 const express = require("express");
-
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello, World!");
+  res.send("Hey, This is Home page");
 });
 
 app.get("/about", (req, res) => {
-  res.send("This is a basic Express.js app.");
+  res.send("Hello, Syphar. This is About page");
 });
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
