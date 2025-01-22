@@ -19,17 +19,17 @@ This project allows you to generate random employee data using the following tec
 
 2. **Backend**:
    - The backend is built using **Express** and provides an endpoint to generate random employee data.
-   - The data is generated using a package like **faker.js** or **chance.js**.
-   - The employee data can be optionally stored in a MongoDB database and returned as a JSON response to be displayed in the frontend.
+     - The employee data is stored in a simple **array** (without using any external package) and returned as a JSON response to be displayed in the frontend.
+     - The data can be optionally stored in a MongoDB database.
 
 ### Key Features
 
 - Generate random employee data such as:
-  - Employee ID
   - Name
-  - Position
-  - Department
+  - Programming Language
   - Salary
+  - City
+  - Manager
 - The data is dynamically displayed in an HTML table.
 - The system allows for easy scaling and customization.
 
@@ -38,7 +38,6 @@ This project allows you to generate random employee data using the following tec
 - **EJS** (for templating in frontend)
 - **Express** (for backend API and handling requests)
 - **MongoDB** (for database storage, if required)
-- **Faker.js** (for generating random employee data)
 
 ### How to Use
 
@@ -46,11 +45,11 @@ This project allows you to generate random employee data using the following tec
 
    - Install required dependencies:
      ```bash
-     npm install express mongoose faker
+     npm install express mongoose
      ```
    - Start the server:
      ```bash
-     node server.js
+     node index.js
      ```
 
 2. **Visit the Application**:
@@ -63,4 +62,4 @@ This project allows you to generate random employee data using the following tec
 
 ### Conclusion
 
-This simple app showcases how to use **EJS**, **Express**, and **MongoDB** to generate and display random employee data. The system is scalable and can be modified to suit various use cases, such as generating different types of data or integrating with a production database.
+This simple app showcases how to use **EJS**, **Express**, and **MongoDB** to generate and display random employee data. The system is scalable and can be modified to suit various use cases, such as generating different types of data or integrating with a production database. Since the data is stored in an array, there is no need for an external package to generate it.
