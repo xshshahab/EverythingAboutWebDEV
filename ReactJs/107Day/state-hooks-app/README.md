@@ -1,8 +1,15 @@
-# React + Vite
+# Hooks & State in REACT JS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Hooks :**
 
-Currently, two official plugins are available:
+Hooks are a way to use state and other React features in functional components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **useState** is a hook that allows you to add state to a functional component.
+
+## **State: **
+
+State is an object that stores data that can change over time.
+
+## **Props :**
+
+Props are immutable values passed from a parent component to a child component.
