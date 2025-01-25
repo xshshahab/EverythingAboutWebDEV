@@ -30,3 +30,7 @@ The **Unlok Task Todo App** is a beautifully designed task management applicatio
 - **Escapes user input** to prevent potential XSS attacks.
 
 url of todo app : https://github.com/xshshahab/EverythingAboutWebDEV/tree/main/ReactJs/114Day/uTask_App
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
