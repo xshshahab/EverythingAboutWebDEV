@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FilePenLine, Trash2 } from "lucide-react";
 
 const Todo = () => {
-    const [todos, setTodos] = useState([]);
+    const [todos, setTodos] = useState(() => {
+        // Load todos from local storage on initial render
+        const savedTodos = localStorage.getItem("todos");
+        return savedTodos ? JSON.parse(savedTodos) : [];
+    });
     const [todo, setTodo] = useState("");
     const [editingId, setEditingId] = useState(null); // Track the ID of the todo being edited
-    const newId = uuidv4();
+
+    // Save todos to local storage whenever the todos array changes
+    useEffect(() => {
+        localStorage.setItem("todos", JSON.stringify(todos));
+    }, [todos]);
 
     const handleAddOrUpdate = () => {
         if (todo.trim().length === 0) {
@@ -22,6 +30,7 @@ const Todo = () => {
             setEditingId(null); // Reset editing mode
         } else {
             // Add a new todo
+            const newId = uuidv4();
             setTodos([...todos, { id: newId, todo, isCompleted: false }]);
         }
 
@@ -54,13 +63,13 @@ const Todo = () => {
                 <h2 className="mb-4 text-2xl font-bold text-center text-zinc-300">
                     {editingId ? "Edit Todo" : "Add a Todo"}
                 </h2>
-                <div id="todo-form" className="flex items-center gap-2">
+                <div id="todo-form" className="flex flex-col items-center gap-2 md:flex-row">
                     <input
                         value={todo}
                         onChange={(e) => setTodo(e.target.value)}
                         type="text"
                         placeholder="Enter a task..."
-                        className="w-64 p-2 text-white rounded bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-green-500"
+                        className="w-full p-2 text-white rounded md:w-64 bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-green-500"
                     />
                     <button
                         onClick={handleAddOrUpdate}
@@ -102,15 +111,15 @@ const Todo = () => {
                             <div id="buttons" className="flex items-center gap-3">
                                 <button
                                     onClick={() => handleEdit(item.id)}
-                                    className="px-4 py-2 font-medium text-white transition duration-300 bg-indigo-600 rounded-lg outline-none hover:bg-indigo-500"
+                                    className="p-1 font-medium text-white transition duration-300 bg-indigo-600 rounded-lg outline-none hover:bg-indigo-500"
                                 >
-                                    <FilePenLine />
+                                    <FilePenLine size={20} />
                                 </button>
                                 <button
                                     onClick={() => handleDelete(item.id)}
-                                    className="px-4 py-2 font-medium text-white transition duration-300 bg-red-600 rounded-lg outline-none hover:bg-red-500"
+                                    className="p-1 font-medium text-white transition duration-300 bg-red-600 rounded outline-none hover:bg-red-500"
                                 >
-                                    <Trash2 />
+                                    <Trash2 size={20} />
                                 </button>
                             </div>
                         </div>
