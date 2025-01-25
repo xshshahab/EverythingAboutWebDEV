@@ -5,15 +5,13 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Services', href: '#services' },
+        { name: 'Your Task', href: '#your-task' },
         { name: 'Contact', href: '#contact' },
     ];
 
     return (
         <nav className="text-white bg-zinc-900">
-            <div className="flex items-center justify-between h-16 px-4 md:px-32">
-                {/* Logo */}
+            <div className="flex items-center justify-between px-4 h-14 md:px-32">
                 <div className="text-2xl font-bold">
                     <a href="/">Unlok Task</a>
                 </div>
