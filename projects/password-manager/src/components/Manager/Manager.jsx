@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import save from "../../assets/Save.gif"
 
 const Manager = () => {
     return (
@@ -10,7 +11,7 @@ const Manager = () => {
                     <span className='text-green-500'>Password/&gt;</span>
                 </div>
                 <p className="mt-1 text-base font-semibold text-center text-green-100">
-                    Your own unlok password manager
+                    Your own password vault.
                 </p>
             </div>
 
@@ -20,6 +21,13 @@ const Manager = () => {
                     <input className='p-2 w-[60%] border border-zinc-500 text-sm outline-none px-5 rounded-full' type="text" />
                     <input className='p-2 w-[25%] border border-zinc-500 text-sm outline-none px-5 rounded-full' type="text" />
                 </div>
+
+
+                <button className='flex items-center justify-center gap-3 px-4 py-2 font-medium bg-green-500 rounded-full outline-none cursor-pointer text-zinc-900 hover:bg-green-400'>
+                    <img src={save} width={22} height={22} alt="save gif" />
+                    <span>Save</span>
+                </button>
+
             </main>
 
         </div>
