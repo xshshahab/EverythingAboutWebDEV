@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <nav className='flex items-center justify-between px-5 py-2 bg-zinc-950 md:px-40'>
-            <div className="text-2xl font-semibold logo">
+            <div className="text-xl font-semibold md:text-2xl logo">
                 <span className='text-green-500'>&lt;</span>
                 Unlok
                 <span className='text-green-500'>Password/&gt;</span>

@@ -36,7 +36,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="w-full h-[1px] my-3 bg-green-200"></div>
-            <div id='bottom' className='flex items-center justify-center gap-1 text-sm'>
+            <div id='bottom' className='flex flex-col items-center justify-center gap-1 py-1 text-sm md:flex-row'>
                 <p>© {currentYear} All rights reserved.</p>
                 <p>Created with ❤️ by <a target='_blank' className='text-green-400 hover:underline' href="https://instagram.com/xsh_shahab">@xsh_shahab</a></p>
             </div>
