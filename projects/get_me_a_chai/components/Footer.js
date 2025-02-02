@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return <footer>Copyright &copy; | All Right Reserved.</footer>;
 };
 
 export default Footer;
