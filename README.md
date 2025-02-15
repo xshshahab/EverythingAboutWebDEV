@@ -1,4 +1,4 @@
-# Everything About Web Development Course 🚀
+# Everything About Web Development Series 🚀
 
 ## What's Inside:
 
