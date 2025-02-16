@@ -1,0 +1,28 @@
+# TypeScript Type Inference & Type Annotations Summary
+
+TypeInference:
+  Definition: "TypeScript automatically determines the type based on the assigned value."
+  Example:
+    Code: |
+      let age = 25; # TypeScript infers 'number' type
+  WhenToUse: "When the type is obvious from the assigned value."
+
+TypeAnnotations:
+  Definition: "Explicitly defining the type for clarity and strict type checking."
+  Example:
+    Code: |
+      let username: string = "John"; # Manually defining the type as 'string'
+  WhenToUse: "When dealing with function parameters, complex types, or API responses."
+
+KeyDifferences:
+  - Feature: "Definition"
+    TypeInference: "TypeScript guesses the type based on the value."
+    TypeAnnotations: "We explicitly specify the type."
+  - Feature: "Example"
+    TypeInference: "let num = 10; # TS infers 'number'"
+    TypeAnnotations: "let num: number = 10; # Manually set 'number'"
+  - Feature: "When to Use?"
+    TypeInference: "When the type is obvious."
+    TypeAnnotations: "When clarity is needed."
+
+FinalThoughts: "Use Type Inference when TypeScript can determine the type automatically. Use Type Annotations for better readability and strict typing."
