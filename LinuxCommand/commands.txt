@@ -1,0 +1,80 @@
+/* ------------------- This will list the content with number ------------------- */
+
+cmd: cat -n ac.txt 
+     1	Hello 
+     2	This is just linux command notes
+cmd: cat --number ac.txt 
+     1	Hello 
+     2	This is just linux command notes
+
+
+/* ------------------- This is list the current month calendar ------------------- */
+
+cmd : ncal
+    May 2025          
+Su     4 11 18 25   
+Mo     5 12 19 26   
+Tu     6 13 20 27   
+We     7 14 21 28   
+Th  1  8 15 22 29   
+Fr  2  9 16 23 30   
+Sa  3 10 17 24 31   
+
+ncal 2025
+                                  2025
+    January           February          March             April             
+Su     5 12 19 26        2  9 16 23        2  9 16 23 30     6 13 20 27   
+Mo     6 13 20 27        3 10 17 24        3 10 17 24 31     7 14 21 28   
+Tu     7 14 21 28        4 11 18 25        4 11 18 25     1  8 15 22 29   
+We  1  8 15 22 29        5 12 19 26        5 12 19 26     2  9 16 23 30   
+Th  2  9 16 23 30        6 13 20 27        6 13 20 27     3 10 17 24      
+Fr  3 10 17 24 31        7 14 21 28        7 14 21 28     4 11 18 25      
+Sa  4 11 18 25        1  8 15 22        1  8 15 22 29     5 12 19 26      
+
+    May               June              July              August            
+Su     4 11 18 25     1  8 15 22 29        6 13 20 27        3 10 17 24 31
+Mo     5 12 19 26     2  9 16 23 30        7 14 21 28        4 11 18 25   
+Tu     6 13 20 27     3 10 17 24        1  8 15 22 29        5 12 19 26   
+We     7 14 21 28     4 11 18 25        2  9 16 23 30        6 13 20 27   
+Th  1  8 15 22 29     5 12 19 26        3 10 17 24 31        7 14 21 28   
+Fr  2  9 16 23 30     6 13 20 27        4 11 18 25        1  8 15 22 29   
+Sa  3 10 17 24 31     7 14 21 28        5 12 19 26        2  9 16 23 30   
+
+    September         October           November          December          
+Su     7 14 21 28        5 12 19 26        2  9 16 23 30     7 14 21 28   
+Mo  1  8 15 22 29        6 13 20 27        3 10 17 24     1  8 15 22 29   
+Tu  2  9 16 23 30        7 14 21 28        4 11 18 25     2  9 16 23 30   
+We  3 10 17 24        1  8 15 22 29        5 12 19 26     3 10 17 24 31   
+Th  4 11 18 25        2  9 16 23 30        6 13 20 27     4 11 18 25      
+Fr  5 12 19 26        3 10 17 24 31        7 14 21 28     5 12 19 26      
+Sa  6 13 20 27        4 11 18 25        1  8 15 22 29     6 13 20 27     
+
+
+// This is listed weeks and it's start from sunday
+ncal november 2002 -w
+    November 2002     
+Su     3 10 17 24   
+Mo     4 11 18 25   
+Tu     5 12 19 26   
+We     6 13 20 27   
+Th     7 14 21 28   
+Fr  1  8 15 22 29   
+Sa  2  9 16 23 30   
+   44 45 46 47 48   
+
+// using this command to list the calendar start from monday
+ncal november 2002 -w -M
+    November 2002     
+Mo     4 11 18 25   
+Tu     5 12 19 26   
+We     6 13 20 27   
+Th     7 14 21 28   
+Fr  1  8 15 22 29   
+Sa  2  9 16 23 30   
+Su  3 10 17 24      
+   44 45 46 47 48   
+
+
+/* ------------------- ------------------- */
+
+
