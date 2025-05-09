@@ -1,0 +1,13 @@
+ touch abc.txt
+shahab@shahab:~/github_repo/EverythingAboutWebDEV/LinuxCommand$ touch abc.txt
+shahab@shahab:~/github_repo/EverythingAboutWebDEV/LinuxCommand$ ls
+abc.txt  ac.txt  commands.txt
+shahab@shahab:~/github_repo/EverythingAboutWebDEV/LinuxCommand$ cat a
+abc.txt  ac.txt   
+shahab@shahab:~/github_repo/EverythingAboutWebDEV/LinuxCommand$ cat abc.txt 
+shahab@shahab:~/github_repo/EverythingAboutWebDEV/LinuxCommand$ cat > abc.txt 
+Hello Sudhir 
+^C
+shahab@shahab:~/github_repo/EverythingAboutWebDEV/LinuxCommand$ touch abc.txt 
+shahab@shahab:~/github_repo/EverythingAboutWebDEV/LinuxCommand$ 
+
