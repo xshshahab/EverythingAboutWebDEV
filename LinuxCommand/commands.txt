@@ -77,4 +77,14 @@ Su  3 10 17 24
 
 /* ------------------- ------------------- */
 
+// This cmd use for check the file
+
+cmd -> file ReactJs/
+ReactJs/: directory
+cmd -> file README.md 
+README.md: Unicode text, UTF-8 text
+
+
+
+
 
