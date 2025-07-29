@@ -1,29 +1,50 @@
-# Everything About Web Development Series 🚀
+# 💯 #100DaysOfCode Challenge
 
-## What's Inside:
+Welcome to my **#100DaysOfCode** journey!  
+This repository documents my daily progress as I learn, build, and grow as a developer 🚀
 
-If you've been itching to dive into the world of web development but feel lost in a sea of English tutorials, you're in the right place! Our course is exclusively in Hindi and is crafted to guide you from being an absolute beginner to a seasoned pro, one step at a time.
+---
 
-## Who Can Benefit?
+## 🔥 PHASE 1: Web Development (Days 1–50)
 
-### This course is a perfect fit for:
+> HTML, CSS, JavaScript, GitHub, React, Node.js & more!
 
-1. Beginners eager to start their web development journey
-2. Intermediate developers looking to refine their skills
-3. Individuals who prefer learning in Hindi
+🚀 Let’s begin our **#TechJourney** with the **#100DaysOfCode** challenge!  
+Day 1 starts now — time to build, learn, and grow 💻✨  
+Follow along and let's level up together!  
+`#CodeNewbie #DevJourney #WebDev`
 
-## What You'll Master:
+---
 
-### During this course, you'll delve into:
+## 🤖 PHASE 2: ML / AI (Days 51–100)
 
-1. The fundamentals of HTML, CSS, and JavaScript
-2. Both front-end and back-end development
-3. How to seamlessly integrate databases
-4. Real-world project implementation
-5. And a whole lot more!
+> Python, NumPy, Pandas, Scikit-learn, Deep Learning, n8n Automation
 
-## The Schedule:
+I’ll transition from frontend/backend development to the world of **Machine Learning and AI**, exploring data, models, and intelligent automation.
 
-We're committed to your growth. Expect fresh source code additions nearly every day. Keep up the pace with our schedule and watch your skills soar! 📅
+---
 
-Get ready to embark on an exciting coding journey! 👨‍💻🌟
+### 📌 Goals
+
+- Build real-world projects
+- Share daily progress on [Twitter](https://twitter.com/xsh_shahab)
+- Stay consistent and accountable
+
+---
+
+### 🗓️ Progress Log
+
+You can track my daily updates in the [log.md](./log.md) file (or update here directly).
+
+---
+
+**Let’s code. Let’s learn. Let’s grow. Together.** 🌱  
+#100DaysOfCode 💯 | #TechJourney 🚀 | #DeveloperDiaries 📓
+
+---
+
+### 📲 Connect with Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mdshahabuddin82)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/xsh_shahab)
+[![Instagram](https://img.shields.io/badge/Instagram-E1306C?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/xsh_shahab)
