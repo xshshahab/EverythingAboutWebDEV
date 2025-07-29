@@ -1,5 +1,5 @@
 echo.
-echo ✅ Starting Git process...
+echo Starting Git process...
 echo.
 
 REM Stage all files
