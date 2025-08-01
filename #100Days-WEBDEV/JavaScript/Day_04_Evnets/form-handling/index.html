@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic User Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <form id="userForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="number" id="age" placeholder="Age" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="url" id="profilePic" placeholder="Profile Picture URL" />
+        <input type="submit" value="Create Profile" />
+      </form>
+
+      <div id="profilesContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
