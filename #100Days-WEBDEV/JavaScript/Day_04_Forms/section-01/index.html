@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled & Validated Form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        background-color: #060606;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      form {
+        background-color: #111;
+        padding: 30px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      }
+
+      form div {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #444;
+        background: #222;
+        color: white;
+        border-radius: 4px;
+        outline: none;
+        transition: 0.2s ease;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        border-color: #00bcd4;
+      }
+
+      small {
+        color: red;
+        font-size: 12px;
+        display: none;
+        margin-top: 5px;
+        position: absolute;
+      }
+
+      input[type="submit"] {
+        background-color: #00bcd4;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        transition: 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0097a7;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myForm" novalidate>
+      <div>
+        <input id="username" type="text" placeholder="Enter your username" />
+        <small>Username must be at least 3 characters</small>
+      </div>
+      <div>
+        <input id="email" type="email" placeholder="Enter your email" />
+        <small>Enter a valid email</small>
+      </div>
+      <div>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your password"
+        />
+        <small
+          >Password must be at least 6 characters with a letter and a
+          number</small
+        >
+      </div>
+      <div>
+        <select id="gender">
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
+        <small>Please select your gender</small>
+      </div>
+      <div>
+        <textarea id="about" placeholder="Tell us about you"></textarea>
+        <small>Please tell us something about you</small>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
