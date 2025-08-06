@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <form>
+        <h2><i class="fas fa-user-plus"></i> Add User</h2>
+
+        <div class="form-group">
+          <label for="username"><i class="fas fa-user"></i> Username</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter username"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="role"><i class="fas fa-briefcase"></i> Role</label>
+          <input type="text" id="role" placeholder="Enter role" required />
+        </div>
+
+        <div class="form-group">
+          <label for="bio"><i class="fas fa-info-circle"></i> Bio</label>
+          <textarea
+            id="bio"
+            placeholder="Write a short bio"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="profile"
+            ><i class="fas fa-image"></i> Profile Image URL</label
+          >
+          <input
+            type="url"
+            id="profile"
+            placeholder="Paste image URL"
+            required
+          />
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i> Submit
+        </button>
+      </form>
+
+      <section id="main-card" class="cards-section">
+        <!-- User cards will be injected here -->
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
